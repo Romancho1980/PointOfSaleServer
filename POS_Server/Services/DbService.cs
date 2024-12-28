@@ -3,6 +3,7 @@ using POS_Server.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -79,13 +80,7 @@ namespace POS_Server.Services
         /// <param name="client"></param>
         public void DeleteClient(ClientAccount client)
         {
-            var tmp_client = _dbContext.clients.Find(client.Id);
-
-            //Удаляем из БД
-            if (tmp_client != null)
-                _dbContext.clients.Remove(tmp_client);
-
-            // Созраняем изменения в БД
+            _dbContext.clients.Remove(client);
             _dbContext.SaveChanges();
         }
 
