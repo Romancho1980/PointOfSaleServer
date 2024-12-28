@@ -7,6 +7,10 @@ namespace POS_Server
 {
     public partial class Form1 : Form
     {
+        // Данные 
+
+
+
         public ApplicationDbContext dbContext;
         public DbService dbService;
         public ClientAccount? SelectedClientAccount { get; set; }
