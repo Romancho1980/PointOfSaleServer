@@ -29,8 +29,16 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            dateTimePicker1 = new DateTimePicker();
+            textBox8 = new TextBox();
             label5 = new Label();
+            label9 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            textBox7 = new TextBox();
+            label8 = new Label();
+            textBox6 = new TextBox();
+            label7 = new Label();
+            textBox5 = new TextBox();
+            label6 = new Label();
             button2 = new Button();
             button1 = new Button();
             textBox4 = new TextBox();
@@ -41,14 +49,6 @@
             label2 = new Label();
             textBox1 = new TextBox();
             label1 = new Label();
-            textBox5 = new TextBox();
-            label6 = new Label();
-            textBox6 = new TextBox();
-            label7 = new Label();
-            textBox7 = new TextBox();
-            label8 = new Label();
-            textBox8 = new TextBox();
-            label9 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,12 +74,38 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label1);
+            groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             groupBox1.Location = new Point(20, 19);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(372, 612);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Данные о клиенте";
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(6, 484);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(331, 23);
+            textBox8.TabIndex = 19;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 260);
+            label5.Name = "label5";
+            label5.Size = new Size(96, 15);
+            label5.TabIndex = 10;
+            label5.Text = "Дата рождения";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(15, 466);
+            label9.Name = "label9";
+            label9.Size = new Size(66, 15);
+            label9.TabIndex = 18;
+            label9.Text = "Доп. инфа";
             // 
             // dateTimePicker1
             // 
@@ -88,14 +114,53 @@
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 11;
             // 
-            // label5
+            // textBox7
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(6, 260);
-            label5.Name = "label5";
-            label5.Size = new Size(90, 15);
-            label5.TabIndex = 10;
-            label5.Text = "Дата рождения";
+            textBox7.Location = new Point(6, 438);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(331, 23);
+            textBox7.TabIndex = 17;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(15, 420);
+            label8.Name = "label8";
+            label8.Size = new Size(103, 15);
+            label8.TabIndex = 16;
+            label8.Text = "Остаток на счёте";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(6, 387);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(331, 23);
+            textBox6.TabIndex = 15;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(15, 369);
+            label7.Name = "label7";
+            label7.Size = new Size(80, 15);
+            label7.TabIndex = 14;
+            label7.Text = "Номер счёта";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(6, 333);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(331, 23);
+            textBox5.TabIndex = 13;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(15, 315);
+            label6.Name = "label6";
+            label6.Size = new Size(40, 15);
+            label6.TabIndex = 12;
+            label6.Text = "Город";
             // 
             // button2
             // 
@@ -161,7 +226,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(15, 86);
             label2.Name = "label2";
-            label2.Size = new Size(58, 15);
+            label2.Size = new Size(62, 15);
             label2.TabIndex = 2;
             label2.Text = "Фамилия";
             // 
@@ -177,73 +242,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(15, 31);
             label1.Name = "label1";
-            label1.Size = new Size(78, 15);
+            label1.Size = new Size(82, 15);
             label1.TabIndex = 0;
             label1.Text = "Имя клиента";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(6, 333);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(331, 23);
-            textBox5.TabIndex = 13;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(15, 315);
-            label6.Name = "label6";
-            label6.Size = new Size(40, 15);
-            label6.TabIndex = 12;
-            label6.Text = "Город";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(6, 387);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(331, 23);
-            textBox6.TabIndex = 15;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(15, 369);
-            label7.Name = "label7";
-            label7.Size = new Size(78, 15);
-            label7.TabIndex = 14;
-            label7.Text = "Номер счёта";
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(6, 438);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(331, 23);
-            textBox7.TabIndex = 17;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(15, 420);
-            label8.Name = "label8";
-            label8.Size = new Size(100, 15);
-            label8.TabIndex = 16;
-            label8.Text = "Остаток на счёте";
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(6, 484);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(331, 23);
-            textBox8.TabIndex = 19;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(15, 466);
-            label9.Name = "label9";
-            label9.Size = new Size(64, 15);
-            label9.TabIndex = 18;
-            label9.Text = "Доп. инфа";
             // 
             // AddClient
             // 
@@ -251,9 +252,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(411, 643);
             Controls.Add(groupBox1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddClient";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "AddClient";
+            Text = "Добавление Клиента";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

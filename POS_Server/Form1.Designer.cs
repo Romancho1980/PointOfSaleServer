@@ -27,7 +27,7 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
-            {
+        {
             components = new System.ComponentModel.Container();
             button1 = new Button();
             button2 = new Button();
@@ -88,9 +88,9 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(28, 94);
+            richTextBox1.Location = new Point(30, 36);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(364, 353);
+            richTextBox1.Size = new Size(364, 411);
             richTextBox1.TabIndex = 2;
             richTextBox1.Text = "";
             // 
@@ -284,7 +284,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(157, 71);
+            label17.Location = new Point(159, 13);
             label17.Name = "label17";
             label17.Size = new Size(50, 15);
             label17.TabIndex = 29;
